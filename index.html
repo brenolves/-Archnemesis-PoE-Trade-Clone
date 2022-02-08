@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade - Path of Exile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.pathofexile.com/trade">
+            <img src="assets/images/logo.png" alt="Logo" id="logo">
+        </a>
+        
+    </header>
+    <section id="search">
+        <div id="searchOptions" class="flex">
+
+            <div class="left inline-flex">
+                <button id="searchListedItems" class="selected" onclick=buttonSelect(this.id)>
+                    Search Listed Items
+                </button>
+    
+                <button id="bulkItemExchange" onclick=buttonSelect(this.id)>
+                    Bulk Item Exchange
+                </button>
+            </div>
+
+            <div class="right inline-flex">
+                <button id="Settings" onclick=buttonSelect(this.id)>
+                    Settings
+                </button>
+    
+                <button id="About" onclick=buttonSelect(this.id)>
+                    About
+                </button>
+            </div>
+            
+        </div>
+
+        <div id="filters">
+        </div>
+        <div id="searchBackground">
+            <div id="searchBar" class="inline-flex">
+                <input id="searchBarInput" type="text" placeholder="Search Items...">
+                <select class="searchSelect" name="League" id="League">
+                    <option value="Archnemesis">Archnemesis</option>
+                    <option value="Hardcore Archnemesis">Hardcore Archnemesis</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Hardcore">Hardcore</option>
+                </select>
+    
+                <select class="searchSelect" name="isOnline" id="isOnline">
+                    <option value="Online Only">Online Only</option>
+                    <option value="Online In League">Online In League</option>
+                    <option value="Any">Any</option>
+                </select>
+            </div>
+    
+            <div id="searchControls" class="flex">
+                <div class="left">
+                    <div></div>
+                </div>
+
+                <div class="center">
+                    <button id="searchButton">Search</button>
+                </div>
+
+                <div class="right">
+                    <button id="clearButton">Clear</button>
+                    <button id="filtersButton">Show Filters</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
